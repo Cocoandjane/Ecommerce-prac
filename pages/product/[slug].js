@@ -7,7 +7,7 @@ import { useStateContext } from '../../context/StateContext'
 import getStripe from '../../lib/getStripe'
 import toast from 'react-hot-toast'
 
-export default function productDetails({ product, products }) {
+export default function ProductDetails({ product, products }) {
     const [index, setIndex] = useState(0);
 
     const { image, name, details, price } = product
