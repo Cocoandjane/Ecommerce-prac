@@ -6,18 +6,18 @@ export default function HeroBanner({ heroBanner }) {
   return (
     <div className='hero-banner-container'>
       <div>
-        <p className='beats-solo'>{heroBanner.smallText}</p>
-        <h3 >{heroBanner.midText}</h3>
-        <h1>{heroBanner.largeText1}</h1>
+        <p style={{ position: 'relative',zIndex:1}} className='beats-solo'>{heroBanner.smallText}</p>
+        <h3 style={{ position: 'relative',zIndex:1}} >{heroBanner.midText}</h3>
+        <h1 style={{ position: 'relative',zIndex:1}}>{heroBanner.largeText1}</h1>
         <img src={urlFor(heroBanner.image)} alt="a image of the product" className="hero-banner-image" />
         <div></div>
         <Link href={`/product/${heroBanner.product}`}>
-          <button type="button">
+          <button type="button" style={{ position: 'relative',zIndex:1}}>
             {heroBanner.buttonText}
           </button>
         </Link>
         <div className='desc'>
-          <h5>Defscription</h5>
+          <h5>Description</h5>
           <p>{heroBanner.desc}</p>
         </div>
       </div>

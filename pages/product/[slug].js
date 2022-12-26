@@ -34,7 +34,7 @@ export default function ProductDetails({ product, products }) {
             <div className='product-detail-container'>
                 <div>
                     <div className='image-container' >
-                        <img src={urlFor(image && image[index])} style={{ width: "500px", marginRight: "80px" }}
+                        <img src={urlFor(image && image[index])} 
                             className="product-detail-image"
                         />
                     </div>
@@ -92,11 +92,6 @@ export default function ProductDetails({ product, products }) {
                         {products.map((item) =>
                             <Product key={item._id} product={item} />
                         )}
-
-                        {products.map((item) =>
-                            <Product key={item._id + "1"} product={item} />
-                        )}
-
                     </div>
 
                 </div>

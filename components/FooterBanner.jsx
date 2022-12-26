@@ -12,11 +12,11 @@ export default function FooterBanner({ footerBanner:{discount, largeText1, large
           <h3>
             {largeText1}
           </h3>
-          <h3>
+          <h3 style={{zIndex:1}}>
             {largeText2}
           </h3>
         </div>
-        <div className='right'>
+        <div className='right' style={{ position: 'relative',zIndex:1}}>
           <p>{smallText}</p>
           <h3>{midText}</h3>
           <p>{desc}</p>
